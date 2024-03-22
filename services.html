@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NUTRI-VIBES SERVICES</title>
+	<link rel="stylesheet" type="text/css" href="services.css">
+</head>
+<body>
+	<h2>NUTRI-VIBES SERVICES</h2>
+	<p>Good health is not merely a matter of chance; it's a conscious choice we make every day, starting with what we put on our plates. A healthy diet forms the cornerstone of well-being, offering  benefits that extend far beyond just physical vitality. By nourishing our bodies with wholesome, nutrient-rich foods like vibrant fruits, crisp vegetables, lean proteins, and whole grains, we fortify our immune systems, bolster our energy levels, and safeguard our long-term health. Each bite laden with vitamins, minerals, and antioxidants is a testament to our commitment to self-care, paving the way for increased longevity and resilience against illness. With every meal, we have the opportunity to cultivate a harmonious relationship between mind, body, and plate, fostering a lifestyle steeped in vitality and fulfillment.</p>
+	<img src="diet1.jpg" width="30%">
+	<img src="diet.jpg" width="40%" id="diet">
+	<p>On the road to attain and maintain a healthy lifestyle through healthy and nutritious diets there gears that accompany the accomplishment to a good healthy.Through this website you will be able to attain the basic essentials to a healthy lifestyle mainly fueled by food intake</p><br>
+	<h3>SERVICES OFFERED</h3>
+	<ol>
+		<li>Personalized meals</li>
+		<li>Health consultations</li>
+	</ol>
+	<h3>PERSONALIZE YOUR MEAL</h3><br>
+	<p>Collect a variety of food rich in vibrant fruits, crisp vegetables, lean proteins, whole grains,vitamins, minerals, and antioxidants to nourish your body according to your needs</p>
+	<select id="dietType" onchange="redirectToRegistration()">
+		<option value="">Select your preference</option> 
+		<option value="meat">Meat</option>
+		<option value="veggies">Veggies</option>
+		<option value="drinks">Drinks</option>
+	</select>
+	<script>
+		function redirectToRegistration(){
+	let dietType=document.getElementById("dietType").value;
+	if(dietType==="meat"){
+		 window.location.href = "meat.html";
+	}else if(dietType=="veggies"){
+		 window.location.href = "veggies.html";
+	}else if(dietType==="drinks"){
+		 window.location.href = "drinks.html";
+	}
+}
+	</script>
+</body>
+</html>

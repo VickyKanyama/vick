@@ -1,0 +1,32 @@
+.captioned-img {
+    display: inline-block; /* Ensures the container takes up only the necessary space */
+    position: relative; /* Establishes a positioning context for the caption */
+    height: 10%;
+    width: 50%;
+    box-sizing: border-box ;
+}
+
+.captioned-img img {
+    display: block; /* Ensures the image takes up the full width of its container */
+    max-width: 50%; /* Ensures the image doesn't exceed its container's width */
+    max-height: 20%; /* Set the image height to 100% of its container */
+}
+
+.caption {
+    position: relative; /* Positions the caption relative to the container */
+    bottom: 0; /* Aligns the caption to the bottom of the container */
+    left: 0; /* Aligns the caption to the left side of the container */
+    width: 50%; /* Ensures the caption spans the full width of its container */
+    background-color: yellow; /* Semi-transparent black background */
+    text-align: center; /* Centers the caption text */
+    padding: 8px; /* Adds padding around the caption text */
+    font-size: 14px; /* Sets the font size of the caption text */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+#Berries{
+    float: right;
+}
+#watermelon_smoothie{
+    float: right;
+}
+
